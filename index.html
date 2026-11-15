@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>LoongBuy spreadsheet – kategorie, zdjęcia QC i wysyłka do Polski</title>
+  <meta name="description" content="LoongBuy spreadsheet po polsku. Przejrzyj kategorie HipoBuyFind i sprawdź, jak porównać rozmiary, zdjęcia QC i całkowity koszt przesyłki do Polski.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pl_PL">
+  <meta property="og:title" content="LoongBuy spreadsheet – poradnik zakupowy po polsku">
+  <meta property="og:description" content="Kategorie HipoBuyFind i praktyczna lista rzeczy do sprawdzenia przed zamówieniem do Polski.">
+  <style>
+    :root{color-scheme:light;--bg:#f6f4fb;--paper:#fff;--ink:#211833;--muted:#564a67;--line:#dcd4e7;--accent:#512491;--lime:#dff59a}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.13}
+    a{color:inherit}
+    :focus-visible{outline:3px solid #864bcc;outline-offset:4px}
+    header,main,footer{width:min(72rem,calc(100% - 2rem));margin:auto}
+    header{padding:1rem 0;font-weight:800}
+    .hero{display:grid;grid-template-columns:1.3fr 1fr;align-items:stretch;background:#241439;color:white;border-radius:1.5rem;overflow:hidden}
+    .intro{padding:clamp(1.4rem,5vw,4rem)}
+    h1{font-size:clamp(2.35rem,6vw,5.25rem);letter-spacing:-.055em;overflow-wrap:anywhere}
+    .intro p{margin-block:1.1rem 1.4rem;max-width:48ch}
+    .button{display:inline-flex;align-items:center;min-height:48px;padding:.65rem 1.1rem;border-radius:.65rem;background:var(--lime);color:#241439;text-decoration:none;font-weight:800}
+    .button:hover{background:white}
+    .hero picture{display:block;background:#eee9f4;min-height:14rem}
+    img{display:block;width:100%;height:auto}
+    .hero img{height:100%;max-height:32rem;object-fit:contain}
+    section{margin-block:clamp(2rem,5vw,4rem)}
+    h2{font-size:clamp(1.6rem,3.3vw,2.5rem);margin-bottom:.85rem;letter-spacing:-.035em}
+    h3{font-size:1.2rem;margin-bottom:.5rem}
+    section>p{max-width:70ch;margin-bottom:1rem;color:var(--muted)}
+    .categories,.tips,.gallery{display:grid;gap:.75rem}
+    .categories{grid-template-columns:repeat(auto-fit,minmax(min(100%,11rem),1fr));padding:0;list-style:none;margin:0}
+    .categories a,.tips article,.gallery figure,details{background:var(--paper);border:1px solid var(--line);border-radius:.8rem}
+    .categories a{display:flex;align-items:center;min-height:48px;height:100%;padding:.65rem .85rem;text-decoration:none;font-weight:700}
+    .categories a:hover{background:#eee5fa;color:var(--accent)}
+    .tips{grid-template-columns:repeat(auto-fit,minmax(min(100%,16rem),1fr))}
+    .tips article{padding:1.1rem}
+    .tips p{color:var(--muted)}
+    .tips p+p{margin-top:.65rem}
+    .gallery{grid-template-columns:repeat(auto-fit,minmax(min(100%,12rem),1fr))}
+    .gallery figure{overflow:hidden}
+    .gallery img{aspect-ratio:1;object-fit:contain;background:#f1edf5}
+    figcaption{padding:.6rem .75rem;font-size:.9rem;font-weight:700}
+    details{margin-block:.6rem;padding:.15rem .95rem}
+    summary{cursor:pointer;font-weight:750;padding:.65rem 0}
+    details p{padding:0 0 .85rem;color:var(--muted)}
+    footer{padding:1.2rem 0 2rem;border-top:1px solid var(--line);color:var(--muted)}
+    @media(max-width:42rem){.hero{grid-template-columns:1fr}.hero img{max-height:17rem}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "name":"LoongBuy spreadsheet – poradnik zakupowy po polsku",
+    "inLanguage":"pl",
+    "mainEntity":[
+      {"@type":"Question","name":"Co to jest LoongBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"To lista odnośników do ofert, zwykle uporządkowana według kategorii. Otwórz ofertę, aby sprawdzić aktualny wariant, rozmiar i dostępność."}},
+      {"@type":"Question","name":"Dokąd prowadzą przyciski na tej stronie?","acceptedAnswer":{"@type":"Answer","text":"Przycisk główny otwiera stronę HipoBuyFind, a kafelki prowadzą do jej poszczególnych kategorii."}},
+      {"@type":"Question","name":"Ile kosztuje wysyłka do Polski?","acceptedAnswer":{"@type":"Answer","text":"Koszt zależy od trasy, wagi rozliczeniowej paczki i wybranych usług. Przelicz koszt produktu i dostawy na złote oraz sprawdź, które opłaty obejmuje kalkulacja."}},
+      {"@type":"Question","name":"Czy zdjęcia QC potwierdzają oryginalność?","acceptedAnswer":{"@type":"Answer","text":"Same zdjęcia QC nie wystarczą do potwierdzenia oryginalności. Pomagają ocenić stan, wymiary i zgodność otrzymanego wariantu z zamówieniem."}}
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/iraye/">
+</head>
+<body>
+  <!-- index.html
+    Analiza wyników: bezpośredni odczyt pierwszej strony Bing dla Polski był niedostępny.
+    Przegląd zastępczy obejmował wyniki dla zapytania głównego i wariantu polskiego:
+    loongbuy.net, sopel.fit, loongbuy.live, alibabaspreadsheet.com, mickeybuys.com,
+    tang-buy.net, loongbuyhaul.com, loongbuywithqc.com, kakobuynike.com i qcradar.com.
+    Tematy użyte w poradniku: kategorie, weryfikacja ofert, zdjęcia QC, rozmiary,
+    przygotowanie paczki i całkowity koszt dostawy.
+  -->
+  <header><a href="https://www.hipobuyfind.com">HipoBuyFind</a></header>
+  <main>
+    <div class="hero">
+      <div class="intro">
+        <h1>LoongBuy spreadsheet</h1>
+        <p>Zacznij od kategorii, potem porównaj warianty i wymiary. Ten poradnik pokazuje, jak czytać listę ofert, oceniać zdjęcia QC i oszacować koszt przesyłki do Polski.</p>
+        <a class="button" href="https://www.hipobuyfind.com">Przejdź do HipoBuyFind</a>
+      </div>
+      <picture>
+        <img src="https://www.tike.gr/files/images/products/media/CW2/CW2288-111/images/CW2288-111.jpg.webp" width="720" height="720" fetchpriority="high" alt="Biały sneaker Nike Air Force 1 ’07 z widocznym logo Swoosh">
+      </picture>
+    </div>
+
+    <section aria-labelledby="kategorie">
+      <h2 id="kategorie">Kategorie produktów</h2>
+      <ul class="categories">
+        <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Buty</a></li>
+        <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Bluzy i swetry</a></li>
+        <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">Koszulki</a></li>
+        <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Kurtki</a></li>
+        <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Spodnie i szorty</a></li>
+        <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Czapki i kapelusze</a></li>
+        <li><a href="https://hipobuyfind.com/category-917-Sets.html">Komplety</a></li>
+        <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Bielizna</a></li>
+        <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Koszulki meczowe</a></li>
+        <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Akcesoria</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="poradnik">
+      <h2 id="poradnik">Od listy produktów do zamówienia</h2>
+      <p>Wynik w arkuszu to punkt wyjścia. Przed zamówieniem sprawdź link do oferty sprzedawcy, wybrany kolor, dostępność rozmiaru i warunki zwrotu.</p>
+      <div class="tips">
+        <article>
+          <h3>Rozmiary butów i ubrań</h3>
+          <p>Porównaj długość wkładki w centymetrach z dobrze dopasowaną parą. W przypadku bluzy sprawdź szerokość pod pachami, długość rękawa i długość całkowitą.</p>
+          <p>Wymiary kurtki porównaj z modelem, który mieści dodatkową warstwę. Przy spodniach zwróć uwagę na obwód pasa i długość nogawki od kroku.</p>
+        </article>
+        <article>
+          <h3>Zdjęcia QC i kontrola jakości</h3>
+          <p>Sprawdź zdjęcie metki rozmiarowej, kolor w neutralnym świetle oraz stan szwów. Przy butach porównaj lewy i prawy egzemplarz. Przy czapce sprawdź obwód i zakres regulacji zapięcia.</p>
+          <p>Przy torbie przyjrzyj się narożnikom i zamkom. Przy biżuterii poproś o zbliżenie mocowania i zapięcia, jeśli dostępne zdjęcia ich nie pokazują.</p>
+        </article>
+        <article>
+          <h3>Wysyłka do Polski i koszt w PLN</h3>
+          <p>Zsumuj koszty produktów, dostawy do magazynu i przesyłki międzynarodowej. Sprawdź kurs waluty, ewentualne opłaty dodatkowe oraz zasady śledzenia przesyłki.</p>
+          <p>Przed połączeniem zamówień w jedną paczkę porównaj wagę rzeczywistą i wagę gabarytową. Zapytaj, jak zachowanie pudełek wpłynie na cenę i ochronę zawartości.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="galeria">
+      <h2 id="galeria">Przykłady obuwia, odzieży i dodatków</h2>
+      <p>Zdjęcia pokazują przykładowe modele i detale, które warto porównać podczas zakupów.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://www.nike.qa/dw/image/v2/BDVB_PRD/on/demandware.static/-/Sites-akeneo-master-catalog/default/dwd722633a/nk/136/c/1/7/a/4/136c17a4_16c0_47ce_b922_679098771a7d.jpg?sw=480&amp;sh=480" width="480" height="480" loading="lazy" decoding="async" alt="Bluza z kapturem Nike Sportswear Club Fleece z kieszenią z przodu">
+          <figcaption>Bluza Nike Sportswear Club Fleece</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="640" loading="lazy" decoding="async" alt="Beżowo-brązowa czapka Gucci z daszkiem i monogramem GG">
+          <figcaption>Czapka Gucci GG</figcaption>
+        </figure>
+        <figure>
+          <img src="https://images.popchill.com/products/26030740309870/17728531100199_8580.jpg" width="480" height="480" loading="lazy" decoding="async" alt="Torba Louis Vuitton Neverfull MM z monogramem i różową chustką przy uchwycie">
+          <figcaption>Torba Louis Vuitton Neverfull MM</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/carre-90-de-toujours-brides-de-gala--001266S%2075-detail-wm-5-0-0-800-800_g.jpg" width="800" height="800" loading="lazy" decoding="async" alt="Detal wzoru na jedwabnej chuście Hermès Brides de Gala Carré 90">
+          <figcaption>Chusta Hermès Brides de Gala</figcaption>
+        </figure>
+        <figure>
+          <img src="https://before-images-item.croketglobal.net/item/thumbnail/80d3191722a296e41551dfad2ca1b1a4.webp" width="480" height="480" loading="lazy" decoding="async" alt="Kolczyki Dior Tribales z białymi perłami z żywicy">
+          <figcaption>Kolczyki Dior Tribales</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq">
+      <h2 id="faq">Najczęstsze pytania</h2>
+      <details>
+        <summary>Co to jest LoongBuy spreadsheet?</summary>
+        <p>To lista odnośników do ofert, zwykle uporządkowana według kategorii. Otwórz ofertę, aby sprawdzić aktualny wariant, rozmiar i dostępność.</p>
+      </details>
+      <details>
+        <summary>Dokąd prowadzą przyciski na tej stronie?</summary>
+        <p>Przycisk główny otwiera stronę HipoBuyFind, a kafelki prowadzą do jej poszczególnych kategorii.</p>
+      </details>
+      <details>
+        <summary>Ile kosztuje wysyłka do Polski?</summary>
+        <p>Koszt zależy od trasy, wagi rozliczeniowej paczki i wybranych usług. Przelicz koszt produktu i dostawy na złote oraz sprawdź, które opłaty obejmuje kalkulacja.</p>
+      </details>
+      <details>
+        <summary>Czy zdjęcia QC potwierdzają oryginalność?</summary>
+        <p>Same zdjęcia QC nie wystarczą do potwierdzenia oryginalności. Pomagają ocenić stan, wymiary i zgodność otrzymanego wariantu z zamówieniem.</p>
+      </details>
+    </section>
+  </main>
+  <footer>Niezależny poradnik zakupowy. Nazwy marek identyfikują modele widoczne na zdjęciach.</footer>
+</body>
+</html>
